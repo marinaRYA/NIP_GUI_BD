@@ -1,0 +1,61 @@
+﻿<Window x:Class="WpfPresent.Present.ProjectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPresent.Present"
+        mc:Ignorable="d"
+        Title="ProjectWindow" Height="600" Width="400"
+         ResizeMode="NoResize" WindowState="Normal">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Название проекта:"/>
+        <TextBox Grid.Row="1" x:Name="ProjectNameTextBox" Margin="5"/>
+
+        <Label Grid.Row="2" Content="Стоимость проекта:"/>
+        <TextBox Grid.Row="3" x:Name="ProjectCostTextBox" Margin="5"/>
+
+        <Label Grid.Row="4" Content="Дата начала:"/>
+        <DatePicker Grid.Row="5" x:Name="StartDatePicker" Margin="5"/>
+
+        <Label Grid.Row="6" Content="Дата окончания:"/>
+        <DatePicker Grid.Row="7" x:Name="EndDatePicker" Margin="5"/>
+
+        <Label Grid.Row="8" Content="Руководитель проекта:"/>
+        <TextBox Grid.Row="9" x:Name="ProjectManagerComboBox" Margin="5"/>
+
+        <Label Grid.Row="10" Content="Контактное лицо:"/>
+        <TextBox Grid.Row="11" x:Name="ContactPersonTextBox" Margin="5"/>
+        <Label Grid.Row="12" Content="Телефон контактного лица:"/>
+        <TextBox Grid.Row="13" x:Name="ContactPersonPhoneTextBox" Margin="5"/>
+
+        <Label Grid.Row="14" Content="Бонусная ставка:"/>
+        <TextBox Grid.Row="15" x:Name="BonusRateTextBox" Margin="5"/>
+
+        <Label Grid.Row="16" Content="Заказчик:"/>
+        <ComboBox Grid.Row="17" x:Name="CustomerComboBox" Margin="5"/>
+        <Button Grid.Row="18" Content="Сохранить" Click="SaveButton_Click" HorizontalAlignment="Center" Margin="0,5,0,0" Height="20" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
